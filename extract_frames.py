@@ -82,7 +82,7 @@ if __name__ == "__main__":
     logging.basicConfig(level=logging.INFO)
     
     # Example usage with fallback logic
-    video_path = "dataset/videos/eastbound_20240319.MP4"
+    video_path = "dataset/videos/eastbound_20240319.MP4" # Verander met de juiste video pad
     output_dir = "dataset/frames/eastbound"
     
     try:
