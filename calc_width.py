@@ -165,7 +165,7 @@ def find_edge_distance(mask):
         right_point = w
     
     distance = right_point - left_point
-    return left_point, right_point, distance
+    return left_point, right_point, distance 
 
 def visualize_edges(mask, left_point, right_point, line_color=(128, 0, 255), thickness=10):
     """

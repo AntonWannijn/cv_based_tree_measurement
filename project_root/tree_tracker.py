@@ -58,6 +58,7 @@ class BasicTracker:
                 self.tracks[track_id]['bbox'] = matched_det['bbox']
                 self.tracks[track_id]['staleness'] = 0
                 self.tracks[track_id]['frames_seen'] +=1
+                ##self.tracks[track_id]['first_frame_seen'] = 
                 
                 tracked_obj = matched_det.copy()
                 tracked_obj['track_id'] = track_id
