@@ -4,7 +4,7 @@ from ultralytics import YOLO
 # Load your trained model
 model = YOLO("best.pt")  # Replace with your model path
 
-# Open the camera (default camera index is 0)
+# Open OBS camera
 cap = cv2.VideoCapture(2)
 
 if not cap.isOpened():
