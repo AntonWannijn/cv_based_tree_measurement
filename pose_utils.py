@@ -2,6 +2,9 @@ import cv2
 import numpy as np
 
 
+
+
+
 def extract_and_match_features(img1, img2):
     sift = cv2.SIFT_create()
 
