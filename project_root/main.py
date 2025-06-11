@@ -18,6 +18,10 @@ def main():
     # --- Configuration ---
     video_source = "input_video.mp4" # Or 0 for webcam, or your actual video file path
     # Example: video_source = r"path/to/your/video.mp4"
+    # When running the file using CMD prompt: first use this command:
+    # set OPENCV_FFMPEG_READ_ATTEMPTS=50000
+    # This is to increase the amount of FFMPEG read attempts, the standard value is 4096
+    # Since our video is so large we need to increase the attempts
     
     yolo_model_path = "best.pt"
     # Ensure this path matches the output of your kalibreren.py
