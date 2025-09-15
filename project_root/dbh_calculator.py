@@ -75,7 +75,7 @@ class DBHCalculator:
         
         if search_x_start >= search_x_end : search_x_start = x1; search_x_end = x2 # Failsafe for very thin bboxes
 
-        # Search from bottom of bbox upwards within the ground mask
+        # Search from bottom of bbox  within the ground mask
         # We expect the tree base to be at the highest y-value (bottom of image)
         # of the trunk that is still on the ground.
         # Or, the lowest y-value of the trunk that touches the non-ground part, if viewed from above.
